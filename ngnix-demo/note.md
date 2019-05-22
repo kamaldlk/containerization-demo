@@ -9,3 +9,6 @@
     docker build -t containerization-demo/nginx .
     docker run --name nginx  -p 80:80 containerization-demo/nginx
     docker rm nginx
+
+###  CMD Vs ENTRYPOINT
+    docker build -f Dockerfile-cmd -t containerization-demo/cmd-vs-entrypoint
