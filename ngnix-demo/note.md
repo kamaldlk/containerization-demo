@@ -11,4 +11,6 @@
     docker rm nginx
 
 ###  CMD Vs ENTRYPOINT
-    docker build -f Dockerfile-cmd -t containerization-demo/cmd-vs-entrypoint
+    docker build -f Dockerfile-cmd -t containerization-demo/cmd-vs-entrypoint .
+    docker run -it containerization-demo/cmd-vs-entrypoint
+    docker run -it containerization-demo/cmd-vs-entrypoint < Name >

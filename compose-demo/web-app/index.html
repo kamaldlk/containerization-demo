@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<script>
+        //Usually, you put script-tags into the head
+        async function myFunction() {
+            let response = await fetch(`http://localhost:5000/`, {'mode': 'cors'});
+            document.getElementById('demo').innerHTML = await response.text();
+        }
+    </script>
+<body>
+
+  <p>Click the button to trigger a function.</p>
+
+  <button onclick="myFunction()">Click me</button>
+
+  <p id="demo"></p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+version: '3'
+services:
+  flask-app:
+#    container_name: flask-app
+    build: flask-app
+    volumes:
+        - ./flask-app:/code
+    ports:
+     - "5000:5000"
+
+  web-app:
+#    container_name: flask-app
+    build: web-app
+    volumes:
+        - ./web-app:/var/www/
+    ports:
+     - "80:80"
+
+  redis-service:
+#    container_name: redis-service
+    image: redis:5.0-rc3-alpine
+    volumes:
+      - ./data/redis/:/data
+#    ports:
+#       - 6379:6379
