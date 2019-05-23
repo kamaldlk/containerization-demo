@@ -9,7 +9,7 @@ services:
      - "5000:5000"
 
   web-app:
-#    container_name: flask-app
+#    container_name: web-app
     build: web-app
     volumes:
         - ./web-app:/var/www/
