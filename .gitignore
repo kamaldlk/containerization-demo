@@ -93,6 +93,7 @@ ENV/
 .DS_Store
 Thumbs.db
 *.log
+compose-demo/data/*
 data/*
 data/db/*
 data/redis/*
